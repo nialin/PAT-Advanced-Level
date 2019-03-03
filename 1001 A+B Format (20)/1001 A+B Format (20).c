@@ -42,7 +42,7 @@ void my_itoa(int num, char *buf, int index)
 void format_print(int num)
 {
 	int i = 0, len;
-	char buf[8] = {0}; 
+	char buf[8] = {0};
 
 	/* itoa(num, buf, 10); */
 	my_itoa(num, buf, 10);

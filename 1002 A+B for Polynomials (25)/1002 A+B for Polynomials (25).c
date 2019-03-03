@@ -55,12 +55,12 @@ void polynomial_add(struct polynomial a, struct polynomial b, struct polynomial 
 	struct term **cur_ptr;
 
 	sum->len = 0;
-	sum->terms = malloc(sizeof(struct term));	
+	sum->terms = malloc(sizeof(struct term));
 	cur_ptr = &sum->terms->next;
 
 	for(a.terms = a.terms->next, b.terms = b.terms->next; a.terms && b.terms; ) {
 		*cur_ptr = malloc(sizeof(struct term));
-		
+
 		if(a.terms->exponent == b.terms->exponent) {
 			(*cur_ptr)->exponent = a.terms->exponent;
 			(*cur_ptr)->coefficient = a.terms->coefficient + b.terms->coefficient;
@@ -87,7 +87,7 @@ void polynomial_add(struct polynomial a, struct polynomial b, struct polynomial 
 		}
 
 		++sum->len;
-		cur_ptr = &(*cur_ptr)->next;	
+		cur_ptr = &(*cur_ptr)->next;
 	}
 
 	while(a.terms) {
