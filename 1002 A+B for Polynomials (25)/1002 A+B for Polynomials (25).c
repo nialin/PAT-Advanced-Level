@@ -19,7 +19,6 @@ void polynomial_print(struct polynomial poly);
 
 void polynomial_add(struct polynomial a, struct polynomial b, struct polynomial *sum);
 
-
 void polynomial_create(struct polynomial *poly)
 {
 	int i;

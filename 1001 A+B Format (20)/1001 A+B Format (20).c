@@ -8,7 +8,6 @@ void my_itoa(int num, char *buf, int index);
 
 void format_print(int num);
 
-
 void my_strrev(char *buf)
 {
 	char tmp;
