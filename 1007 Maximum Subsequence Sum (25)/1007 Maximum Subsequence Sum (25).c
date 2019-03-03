@@ -6,12 +6,9 @@ int main()
 {
 	int i, n, cnt, sum, head, max_sum = INT_MIN, max_head, max_tail;
 
-	scanf("%d", &cnt);
+	scanf("%d%d", &cnt, &n);
 
-	scanf("%d", &n);
-	sum = max_head = head = n;
-
-	for(i = 1; i < cnt; ++i) {
+	for(i = 1, sum = head = max_head = n; i < cnt; ++i) {
 		scanf("%d", &n);
 
 		if(sum < 0)
